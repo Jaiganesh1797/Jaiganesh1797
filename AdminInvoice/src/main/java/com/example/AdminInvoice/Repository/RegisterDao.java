@@ -10,8 +10,8 @@ import java.util.Optional;
 public interface RegisterDao extends MongoRepository<Register,Integer> {
 
 
-    Register findByuserName(String userName);
-    Register findByuserPassword(String userPassword);
+    Optional<Register> findByuserName(String userName);
+    Optional<Register> findByuserPassword(String userPassword);
 
 
 }
